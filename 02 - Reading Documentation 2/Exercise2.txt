@@ -1,0 +1,19 @@
+Exercise 2:
+
+Assume you have this Array:
+
+a = %w(a b c d e)
+
+How would you use Array#insert to insert the numbers 5, 6, and 7 between the elements
+with values 'c' and 'd'?
+
+
+
+Solution:
+
+We would use Array#insert with the positive index of the element we want to insert before, or
+with the negative index of the element we want to insert after.
+In our example, we want to insert numbers between 'c' and 'd', so we'll use the positive index
+of 'd', which is 3. This will allow us to insert our new elements before the 'd' (but after 'c').
+
+	-> a.insert(3, 5, 6, 7)

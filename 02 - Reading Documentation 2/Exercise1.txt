@@ -1,0 +1,11 @@
+Exercise 1:
+
+How would you use String#upcase to create an uppercase version of the string "xyz"?
+
+
+
+Solution:
+
+We simply need to use the .upcase method on the string to return an uppercase version.
+
+	-> str = "xyz".upcase

@@ -1,0 +1,34 @@
+Exercise 3:
+
+Assume you have the following code:
+
+s = 'abc def ghi,jkl mno pqr,stu vwx yz'
+puts s.split.inspect
+puts s.split(',').inspect
+puts s.split(',', 2).inspect
+
+What will each of the 3 puts statements print?
+
+
+
+Solution:
+
+The #inspect method will give us a printable version of our results.
+
+
+1a. The #split method with no arguments will use whitespace to separate the string into
+an array of individual strings.
+
+1b. -> ["abc", "def", "ghi,jkl", "mno", "pqr,stu", "vwx", "yz"]
+
+
+2a. The (',') argument passed to #split will cause split to use a comma as a delimiter (separator).
+
+2b. -> ["abc def ghi", "jkl mno pqr", "stu vwx yz"]
+
+
+3a. The (',', 2) argument passed to #split will split the string into an array just as the previous
+split did, but we have an optional argument of 2 that was also passed. This means that no more than 1
+splits will occur (n-1) and we will get a two substring array returned.
+
+3b. -> ["abc def ghi", "jkl mno pqr,stu vwx yz"]

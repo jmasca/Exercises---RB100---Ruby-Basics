@@ -1,0 +1,16 @@
+Exercise 8:
+
+Use the ruby documentation for the String class to determine which method
+can be used to right justify a String object.
+
+
+
+Solution:
+
+When looking at the String class documentation there's a method called #rjust
+that can be used to right justify a String object. The #rjust method takes an
+argument 'size' which will determine the number of characters to right justify
+the object. There's another optional argument that can be given if you want the
+padding to be anything other than whitespace.
+
+	-> "string".rjust(10, '*')

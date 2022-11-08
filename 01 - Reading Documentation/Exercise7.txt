@@ -1,0 +1,14 @@
+Exercise 7:
+
+Locate and open the class documentation for the String class.
+
+
+
+Solution:
+
+To locate and open the documentation for the String class:
+(from https://docs.ruby-lang.org/en/master/index.html):
+
+	- on the left under 'Class and Module Index' -> String
+
+Full link: https://docs.ruby-lang.org/en/master/String.html

@@ -1,0 +1,13 @@
+Exercise 2:
+
+Locate the description of the while loop in the ruby documentation.
+
+
+
+Solution:
+
+To locate the while loop description (from https://docs.ruby-lang.org/en/master/):
+
+	- syntax -> Control Expressions -> while Loop
+
+Full link: https://docs.ruby-lang.org/en/master/syntax/control_expressions_rdoc.html#label-while+Loop

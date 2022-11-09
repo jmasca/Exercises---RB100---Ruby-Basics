@@ -1,0 +1,30 @@
+Exercise 9:
+
+What will the following code print, and why? Don't run the code until you have tried
+to answer.
+
+a = 7
+array = [1, 2, 3]
+
+array.each do |a|
+  a += 1
+end
+
+puts a
+
+
+
+Solution:
+
+This code will print: 7
+
+We will get the printout of the value 7 because the block on line 4 is creating
+a local variable defined to the scope of the block. This variable 'a' is being used
+on line 5 where it is incremented. However, since we have two variable names pointing
+to two different values, the 'a' variable on line 1 is never modified. Thus, the 'puts a'
+on line 8 will give us the value of 7.
+
+From the discussion of the solution itself:
+"This problem demonstrates shadowing. Shadowing occurs when a block argument hides a
+local variable that is defined outside the block. Since the outer a is shadowed, the
+a += 1 has no effect on it. In fact, that statement has no effect at all."

@@ -1,0 +1,22 @@
+Exercise 3:
+
+What will the following code print, and why? Don't run the code until you have
+tried to answer.
+
+a = 7
+
+def my_value(b)
+  a = b
+end
+
+my_value(a + 5)
+puts a
+
+
+
+Solution:
+
+This code will also print the value 7. The argument 'a + 5' that's being
+passed to 'my_value' on line 8 will pass the value 12. A method scoped variable
+'a' is then assigned this value on line 4. However, since the 'puts a' on line
+8 is using the locally scoped variable from line 1, the output will be 7.

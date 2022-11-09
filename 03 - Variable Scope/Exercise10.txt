@@ -1,0 +1,25 @@
+Exercise 10:
+
+What will the following code print, and why? Don't run the code until you have tried
+to answer.
+
+a = 7
+array = [1, 2, 3]
+
+def my_value(ary)
+  ary.each do |b|
+    a += b
+  end
+end
+
+my_value(array)
+puts a
+
+
+
+Solution:
+
+This code will print another error message. This is a similar scenario as earlier when
+the method assignment on line 6 produces an error since it does not have access to the
+variable 'a' that was defined on line 1. There is no 'a' variable initialized inside of the
+method and we cannot increment nil. Thus, an error message is produced.

@@ -1,0 +1,24 @@
+Exercise 7:
+
+What will the following code print, and why? Don't run the code until you have tried
+to answer.
+
+a = 7
+array = [1, 2, 3]
+
+array.each do |element|
+  a = element
+end
+
+puts a
+
+
+
+Solution:
+
+This code will print: 3
+
+On line 4 we are iterating through the array that was initialized on line 2. Each value
+of the array that we iterate through will be assigned to the block variable 'element' and it will be assigned to the local variable 'a' on line 5. Blocks do have access to
+variables initialized outside of themselves as long as they are in the same scope. Since 3 is the last value of the array, 3 is the last value assigned to 'a'. When we reach the
+'puts a' on line 8 this is the value we will see, 3.

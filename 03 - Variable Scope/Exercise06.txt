@@ -1,0 +1,21 @@
+Exercise 6:
+
+What will the following code print, and why? Don't run the code until you have tried
+to answer.
+
+a = 7
+
+def my_value(b)
+  b = a + a
+end
+
+my_value(a)
+puts a
+
+
+
+Solution:
+
+This code will display an error message because the variable 'a' being used on line 4
+has not been defined within the method 'my_value'. Methods do not have direct access to
+variables initialized outside of the method.

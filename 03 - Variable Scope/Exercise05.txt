@@ -1,0 +1,24 @@
+Exercise 5:
+
+What will the following code print, and why? Don't run the code until you have tried
+to answer.
+
+a = "Xyzzy"
+
+def my_value(b)
+  b = 'yzzyX'
+end
+
+my_value(a)
+puts a
+
+
+
+Solution:
+
+The code will print: Xyzzy
+
+This is a similar code to Exercise 4, but here, on line 4, we are not reassigning an
+index value, we're simply assigning the method scoped variable 'b' to a new value of
+'yzzyX'. Since the method call on line 7 isn't reassigning or printing the value, the
+'puts a' on line 8 will use the value of the local variable on line 1, 'Xyzzy'.

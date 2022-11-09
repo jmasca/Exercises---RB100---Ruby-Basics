@@ -1,0 +1,22 @@
+Exercise 1:
+
+What will the following code print and why? Don't run it until you have tried to answer.
+
+a = 7
+
+def my_value(b)
+  b += 10
+end
+
+my_value(a)
+puts a
+
+
+
+Solution:
+
+This code will print the value 7. We assign a local variable 'a' to 7 on line 1. 'a' is
+passed into the method on line 7, but it isn't being assigned to any variable or output in
+any way. So, even though the method will return the value of 17, the value will be lost.
+Also, since it's a non-destructive action the method will not mutate the variable 'a' itself.
+Thus, 'puts a' on line 8 will print the value of 'a', which remains at 7.

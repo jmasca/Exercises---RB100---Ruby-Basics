@@ -1,0 +1,27 @@
+Exercise 4:
+
+What will the following code print, and why? Don't run the code until you have tried
+to answer.
+
+a = "Xyzzy"
+
+def my_value(b)
+  b[2] = '-'
+end
+
+my_value(a)
+puts a
+
+
+
+Solution:
+
+This code will print: Xy-zy
+
+On line 1, the local variable 'a' is assigned the value 'Xyzzy', and this value is passed
+to the method 'my_value' on line 7. When the index of this string is accessed via the
+parameter 'b' on line 4, the character '-' is assigned to replace index 2, the first 'z'.
+Modifying the index of a string in this way is destructive and mutates the caller itself. This means, the first 'z' of 'Xyzzy' at index 2 is replaced with a '-' not only in the
+method, but within the memory address itself. Since the local variable 'a' is also
+pointing to this string, it is altered, as well. When 'puts a' occurs on line 8, the
+string has been modified and the output becomes 'Xy-zy'.

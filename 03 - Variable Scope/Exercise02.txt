@@ -1,0 +1,24 @@
+Exercise 2:
+
+What will the following code print, and why? Don't run the code until you have tried to answer.
+
+a = 7
+
+def my_value(a)
+  a += 10
+end
+
+my_value(a)
+puts a
+
+
+
+Solution:
+
+This code is going to print the same value as the previous question, 7. This is because the local
+variable 'a' being assigned on line 1 is given a local scope, and the variable 'a' in the method
+definition on line 3 and line 4 is given a method scope. Even though the variables share the same
+name, they are pointing to two different memory addresses. Thus, as the last question went, even
+though the method will return the value 17, it isn't being reassigned, assigned, or output, so we
+will not see this value at all. Instead, 'puts a' on line 8 will print the value of the local
+variable 'a' from line 1, which is 7.

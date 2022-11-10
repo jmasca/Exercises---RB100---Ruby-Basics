@@ -1,0 +1,31 @@
+Exercise 5:
+
+Modify the code below so "Hello!" is printed 5 times.
+
+say_hello = true
+
+while say_hello
+  puts 'Hello!'
+  say_hello = false
+end
+
+
+
+Solution:
+
+say_hello = true
+i = 1
+
+while say_hello
+  puts 'Hello!'
+  i += 1
+  say_hello = false if i > 5
+end
+
+If we want to modify the existing code to print 'Hello' 5 times, rather than once, we need
+three things. The first is a control variable, or a counter variable. Here we used 'i' to represent the iterations. Next, we need to increment the counter variable after 'puts
+hello'. Every time we print our target string, 'Hello', we can increment our counter. The
+last thing we need is a conditional statement to test when we should make 'say_hello'
+become 'false'. We will test our counter after each pass/increment. When our counter is
+greater than 5 we have printed the 'Hello' 5 times and its safe to set 'say_hello' to
+'false'. Doing so will exit the loop after printing 'Hello' 5 times.

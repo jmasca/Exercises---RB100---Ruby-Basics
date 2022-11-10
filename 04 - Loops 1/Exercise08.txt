@@ -1,0 +1,31 @@
+Exercise 8:
+
+Given the array of several numbers below, use an until loop to print each number.
+
+numbers = [7, 9, 13, 25, 18]
+
+
+
+Solution:
+
+numbers = [7, 9, 13, 25, 18]
+
+until numbers.empty?
+  puts numbers.shift
+end
+
+-- However, this will empty the numbers array. --
+
+To keep the array intact:
+
+numbers = [7, 9, 13, 25, 18]
+
+count = 0
+
+until count == numbers.size
+  puts numbers[count]
+  count += 1
+end
+
+-- This matches the solution provided and is good practice since we have more control over
+the number of iterations and the 'count' variable is doubling as the index value we want printed from the array. Also, the numbers array remains unmodified. --

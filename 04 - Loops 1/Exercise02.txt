@@ -1,0 +1,38 @@
+Exercise 2:
+
+The code below is an example of a nested loop. Both loops currently loop infinitely. Modify
+the code so each loop stops after the first iteration.
+
+loop do
+  puts 'This is the outer loop.'
+
+  loop do
+    puts 'This is the inner loop.'
+  end
+end
+
+puts 'This is outside all loops.'
+
+
+
+Solution:
+
+loop do
+  puts 'This is the outer loop.'
+
+  loop do
+    puts 'This is the inner loop.'
+    break
+  end
+
+  break
+end
+
+puts 'This is outside all loops.'
+
+The solution to this problem to make the loops only perform one iteration would be to add
+break statements into the appropriate locations. We would need to exit the inner loop first
+by providing a break statement on line 6, after the 'puts', but before 'end'. Then, to exit
+the outer loop we would need another break statement after the 'end' of the inner loop.
+This would now be on line 8, but adding a newline for readability would put the outer loops
+break statement on line 9. Both loops now iterate once through and break out of them.

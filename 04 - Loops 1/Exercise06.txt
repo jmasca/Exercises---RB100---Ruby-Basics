@@ -1,0 +1,42 @@
+Exercise 6:
+
+Using a while loop, print 5 random numbers between 0 and 99 (inclusive). The code below
+shows an example of how to begin solving this exercise.
+
+numbers = []
+
+while <condition>
+  # ...
+end
+
+
+
+Solution:
+
+#my solution:
+numbers = Array(1..99)
+counter = 1
+
+while counter < 6
+  puts numbers[rand(98)]
+  counter += 1
+end
+
+
+#Provided Solution:
+numbers = []
+
+while numbers.size < 5
+  numbers << rand(100)
+end
+
+puts numbers
+
+
+NOTE: Although the solution I came up with is working and correct, the provided solution is
+more efficient. I chose to store 100 integers in an array, create a counter variable, and
+increment that counter variable to exit the loop after 5 numbers. My solution also has the
+random number as an index, which then has to go into the array to pull the number out.
+The provided solution has a test condition checking the size of the array and storing
+random numbers into the array until it has 5 numbers. After it has its 5 numbers, the loop
+exits and the numbers are printed. This solution saves time and memory.

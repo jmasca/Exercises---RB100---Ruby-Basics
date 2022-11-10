@@ -1,0 +1,25 @@
+Exercise 4:
+
+Modify the code below so the loop stops iterating when the user inputs 'yes'.
+
+loop do
+  puts 'Should I stop looping?'
+  answer = gets.chomp
+end
+
+
+
+Solution:
+
+loop do
+  puts 'Should I stop looping?'
+  answer = gets.chomp
+
+  break if answer == 'yes'
+end
+
+To modify this code correctly we would need to add a 'break' statement and a conditional
+test. After input from the user is stored into the variable 'answer' we can add our 'break'
+statement and conditional test following it. We want to test if the user input that is
+stored in 'answer' is equal to the string 'yes'. Once it is, the break will execute and we
+will exit the loop.

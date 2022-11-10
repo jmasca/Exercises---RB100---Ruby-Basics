@@ -1,0 +1,17 @@
+Exercise 10:
+
+Your friends just showed up! Given the following array of names, use a for loop to greet
+each friend individually.
+
+friends = ['Sarah', 'John', 'Hannah', 'Dave']
+
+
+
+Solution:
+
+for friend in friends
+  puts "Hello, #{friend}!"
+end
+
+We are using the 'friend' variable in the for loop to represent each friend in the
+'friends' array. Then we output our greeting with each friend.

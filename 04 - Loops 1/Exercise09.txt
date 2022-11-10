@@ -1,0 +1,27 @@
+Exercise 9:
+
+The code below shows an example of a for loop. Modify the code so that it only outputs i if
+i is an odd number.
+
+for i in 1..100
+  puts i
+end
+
+
+
+Solution:
+
+for i in 1..100
+  puts i if i % 2 != 0
+end
+
+The only modification to the code we would need to make is to add a conditional statement
+after the 'puts i'. We add an 'if' statement with 'i % 2 != 0'. Using the modulus, any
+number that comes back with a remainder of 0 when divided by 2 is even. Any time it comes
+back with something other than 0 it will be an odd number. Therefore, any time the
+remainder from 'i % 2' is not equal to 0, we print that number (only the odd numbers).
+
+
+There is an even easier solution that was provided. This would be to use the #odd? method
+on the integer variable 'i'. This method simply returns true if the integer is odd.
+ -> puts i if i.odd?

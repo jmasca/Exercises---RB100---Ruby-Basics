@@ -1,0 +1,53 @@
+Exercise 9:
+
+The following code increments number_a and number_b by either 0 or 1. loop is used so that
+the variables can be incremented more than once, however, break stops the loop after the
+first iteration. Use next to modify the code so that the loop iterates until either
+number_a or number_b equals 5. Print "5 was reached!" before breaking out of the loop.
+
+number_a = 0
+number_b = 0
+
+loop do
+  number_a += rand(2)
+  number_b += rand(2)
+
+  break
+end
+
+
+
+Solution:
+
+number_a = 0
+number_b = 0
+
+loop do
+  number_a += rand(2)
+  number_b += rand(2)
+  next if number_a != 5 && number_b != 5
+
+  puts "5 was reached!"
+  break
+end
+
+To accomplish the goal of iterating until either 'number_a' or 'number_b' are equal to 5,
+we need the 'next' statement to come directly after the incrementation. The condition we
+chose to test for the 'next' to execute is 'if number_a != 5 && number_b != 5'. This means
+that both of these conditions must be 'true' in order for 'next' to execute. As soon as
+either 'number_a' or 'number_b' reach 5, the respective condition will become 'false', the
+'next' statement will not execute, we #puts our "5 was reached!" and break from the loop.
+
+
+Including the provided solution using 'unless':
+number_a = 0
+number_b = 0
+
+loop do
+  number_a += rand(2)
+  number_b += rand(2)
+  next unless number_a == 5 || number_b == 5
+
+  puts '5 was reached!'
+  break
+end

@@ -1,0 +1,34 @@
+Exercise 2:
+
+Modify the following code so that the loop stops if number is equal to or between 0 and 10.
+
+loop do
+  number = rand(100)
+  puts number
+end
+
+
+
+Solution:
+
+loop do
+  number = rand(100)
+  puts number
+  break if number >= 0 && number <= 10
+end
+
+The modifications that we chose to use here was an 'if' statement following the 'break'
+statement. The condition in the 'if' is using the logical AND operator (&&) to determine
+if the number is greater than or equal to zero AND less than or equal to ten. When both
+of these conditions are true, the 'break' statement will execute.
+
+
+The provided solution used the #between? method from the Comparable module. #between? takes
+two arguments, the minimum value and the maximum value. This method will return 'true' if
+the number is between or equal to the two values provided.
+
+loop do
+  number = rand(100)
+  puts number
+  break if number.between?(0, 10)
+end

@@ -1,0 +1,34 @@
+Exercise 1:
+
+Write a loop that prints numbers 1-5 and whether the number is even or odd. Use the code
+below to get started.
+
+count = 1
+
+loop do
+  count += 1
+end
+
+
+
+Solution:
+
+count = 1
+
+loop do
+  if count.odd?
+    puts "#{count} is odd!"
+  else
+    puts "#{count} is even!"
+  end
+  count += 1
+  break if count > 5
+end
+
+In this problem, we want to perform an if/else conditional check on the value of 'count' to
+determine if it's an odd number or an even number. We will go ahead and use the #odd?
+method on the 'count' variable to determine if it's an odd or even number. If it comes back
+odd, we print the number and that it's odd, otherwise, we print the number and the fact
+that it's even. Then, we need a way to exit the loop after we've printed 5 numbers, so we
+add a 'break' statement with a conditional of exiting when 'count' is greater than 5
+(5 being the number of iterations we wanted to perform).

@@ -1,0 +1,51 @@
+Exercise 8:
+
+Using next, modify the code below so that it only prints even numbers.
+
+number = 0
+
+until number == 10
+  number += 1
+  puts number
+end
+
+
+
+Solution:
+
+number = 0
+
+until number == 10
+  number += 1
+  next if number.odd?
+  puts number
+end
+
+Here, we modify the code by adding one line between the incrementation of number and the
+printing of number. 'next' will skip the remainder of the loop and jump to the next
+iteration. We add the 'if' statement and the #odd? method to test if the number is odd. If
+the number is odd, 'next' will skip the remaining code of the loop (which is to print the
+number) and cycle back to the top where we increment number and test the condition again.
+We will only be printing the even numbers now.
+
+
+Further Exploration
+
+Why did next have to be placed after the incrementation of number and before #puts?
+
+-- The 'next' had to placed before the #puts to make sure the odd numbers weren't printed.
+It also had to come after the incrementation because otherwise we would create an infinite
+loop as soon as we reached an odd number. We would cycle to the top over and over again
+with whatever odd number we had.
+
+
+commented a solution:
+Further Exploration: Why did next have to be placed after the incrementation of number and before #puts?
+
+I think it's important to answer this question. It seems fairly straightforward why we want
+the next to be placed before #puts (to avoid printing the odd numbers), however, it's
+equally as important to know why we place the next after the incrementation. We do so
+because if next was before the incrementation we would be creating an infinite loop. As
+soon as we get our first odd number (1), next would cycle back to the top of the loop
+without incrementing. We would then test the if condition, still have the same odd number
+(1), and next would cycle back to the top... over and over and over.

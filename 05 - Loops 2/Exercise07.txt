@@ -1,0 +1,23 @@
+Exercise 7:
+
+The method below counts from 0 to 4. Modify the block so that it prints the current number
+and stops iterating when the current number equals 2.
+
+5.times do |index|
+  puts index
+  # ...
+end
+
+
+
+Solution:
+
+5.times do |index|
+  puts index
+  break if index == 2
+end
+
+The solution to this problem only requires adding one line of code. We add the 'break'
+statement after we print the value of the current number being held by the block variable
+'index'. We test the condition of the 'index', or current number, being equal to 2 in the
+'if' statement following the 'break'. When this statement is 'true' we'll exit the loop.

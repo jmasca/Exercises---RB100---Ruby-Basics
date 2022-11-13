@@ -1,0 +1,21 @@
+Exercise 6:
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def meal
+  return 'Breakfast'
+  'Dinner'
+  puts 'Dinner'
+end
+
+puts meal
+
+
+
+Solution:
+Breakfast
+
+The code above will only print the string 'Breakfast'. This is because the very first line
+in the method definition is the 'return' statement returning the string 'Breakfast'.
+Nothing after this line is going to be executed in the method. The #puts on line 7 will
+then print 'Breakfast'.

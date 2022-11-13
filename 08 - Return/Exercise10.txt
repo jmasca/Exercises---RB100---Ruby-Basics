@@ -1,0 +1,24 @@
+Exercise 10:
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def tricky_number
+  if true
+    number = 1
+  else
+    2
+  end
+end
+
+puts tricky_number
+
+
+
+Solution:
+1
+
+The code above will print the value 1. This time, the method definition is using an 'if'
+statement. The 'if' will execute when its expression evaluates to 'true'. Since the
+expression following the 'if' is the boolean value 'true', the 'if' clause is executed
+and the 'number' variable is assigned to 1. Nothing else in this method will execute, thus,
+the returned value from this method will also be a 1. #puts prints the value 1.

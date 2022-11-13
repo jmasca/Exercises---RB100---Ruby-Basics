@@ -1,0 +1,29 @@
+Exercise 9:
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def count_sheep
+  5.times do |sheep|
+    puts sheep
+    if sheep >= 2
+      return
+    end
+  end
+end
+
+p count_sheep
+
+
+
+Solution:
+0
+1
+2
+nil
+
+The above code will print 0-2 and nil. Inside of the method definition we use Integer#times
+on the integer 5 and #puts the value. After the value is printed we enter a conditional
+'if' statement to determine if the integer value is greater than or equal to the value 2.
+When this is 'true' the method will immediately return and not execute any further. There
+is no return value with the 'return' statement, so 'nil' is the value that is returned by
+the 'count_sheep' method. We used 'p' to print out nil. So, 0, 1, 2, and nil are printed.

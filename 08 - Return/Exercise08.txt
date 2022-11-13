@@ -1,0 +1,29 @@
+Exercise 8:
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def count_sheep
+  5.times do |sheep|
+    puts sheep
+  end
+  10
+end
+
+puts count_sheep
+
+
+
+Solution:
+0
+1
+2
+3
+4
+10
+
+The above code will do the same as the previous exercise inside of the method. It will
+print the values 0, 1, 2, 3, 4. However, the difference in this code is the 10 after the
+#times method and before the end of the method definition. Since this line is executed, the
+method will implicitly return its value, 10. After the 10 is returned to the #puts
+statement that called 'count_sheep', the 10 will also be printed. Therefore, 0, 1, 2, 3, 4,
+and 10 are printed.

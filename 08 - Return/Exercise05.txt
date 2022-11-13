@@ -1,0 +1,24 @@
+Exercise 5:
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def meal
+  'Dinner'
+  puts 'Dinner'
+end
+
+p meal
+
+
+
+Solution:
+Dinner
+nil
+
+The above code is going to print the string 'Dinner', followed by 'nil'. After the method
+call and inside of the method, the first line 'Dinner' doesn't do anything. The next line,
+however, will #puts the string 'Dinner', as expected. Since this is the last line being
+executed inside of the method definition, this will also return the provided value. In this
+case, the provided value will be the value that #puts returns, which is 'nil'. The 'p' on
+line 6 with the method call will print out the value that was returned, nil.
+Note: The 'p' is used to display useful output for debugging purposes, so nil is showed.

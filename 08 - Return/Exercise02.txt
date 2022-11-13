@@ -1,0 +1,19 @@
+Exercise 2:
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def meal
+  'Evening'
+end
+
+puts meal
+
+
+
+Solution:
+Evening
+
+The code above will print the string 'Evening'. This is because the method 'meal', being
+called on line 5, will return the string 'Evening'. Even without the 'return' statement a
+method returns the value from the last line executed. This would be 'Evening'. The #puts
+will then print the string.

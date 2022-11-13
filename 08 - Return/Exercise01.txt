@@ -1,0 +1,18 @@
+Exercise 1:
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def meal
+  return 'Breakfast'
+end
+
+puts meal
+
+
+
+Solution:
+Breakfast
+
+The code above will print the string 'Breakfast'. This is because the method 'meal', being
+called on line 5, will return the string 'Breakfast'. The 'return' statement will
+immediately exit a method and return the provided value. Then, the #puts prints the string.

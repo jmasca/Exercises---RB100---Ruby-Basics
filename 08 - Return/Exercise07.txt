@@ -1,0 +1,29 @@
+Exercise 7:
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def count_sheep
+  5.times do |sheep|
+    puts sheep
+  end
+end
+
+puts count_sheep
+
+
+
+Solution:
+0
+1
+2
+3
+4
+5
+
+The above code will print out the integers 0 through 5. The 'count_sheep' method is called
+on line 7. Once we're in the method, the #times method uses 'sheep' as its parameter to
+represent the integer values. Since the #times method was called on the integer 5, the
+#puts on the next line will print the integers 0, 1, 2, 3, 4. (zero to self - 1). The
+#times method also returns self, which in this case is 5. Since there are no more lines to
+be executed inside of the method, the method will return the result of the last line that
+was executed (5). The #puts on line 7 then prints the integer 5. Thus 0-5 is printed.

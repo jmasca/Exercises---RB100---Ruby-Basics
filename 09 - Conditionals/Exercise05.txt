@@ -1,0 +1,21 @@
+Exercise 5:
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+number = 7
+
+if number
+  puts "My favorite number is #{number}."
+else
+  puts "I don't have a favorite number."
+end
+
+
+
+Solution:
+My favorite number is 7.
+
+The code above is going to print this string because when the 'number' variable is tested
+in the if statement, the 'number' variable is going to evaluate to 'true'. In Ruby, every
+expression evaluates to 'true' except for 'false' and 'nil'. Therefore, the if statement
+will evaluate to 'true' and #puts will print the string "My favorite number is 7."

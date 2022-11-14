@@ -1,0 +1,9 @@
+Exercise 1:
+
+Create an empty string using the String class and assign it to a variable.
+
+
+
+Solution:
+
+my_string = String.new

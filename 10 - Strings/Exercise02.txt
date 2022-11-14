@@ -1,0 +1,19 @@
+Exercise 2:
+
+Modify the following code so that double-quotes are used instead of single-quotes.
+
+puts 'It\'s now 12 o\'clock.'
+
+Expected output:
+
+It's now 12 o'clock.
+
+
+
+Solution:
+puts "It's now 12 o'clock."
+
+When using single quotes on a string that contain single quotes in them like, it's or
+o'clock, you need to use the escape sequence \ in order to have the ' be printed. This
+is the only character you can use the escape sequence on when using single quotes. If you
+choose to use double quotes you can use other escape sequences like a newline "\n".

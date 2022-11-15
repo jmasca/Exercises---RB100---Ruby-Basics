@@ -1,0 +1,18 @@
+Exercise 10:
+
+Rewrite car as a nested array containing the same key-value pairs.
+
+car = {
+  type:  'sedan',
+  color: 'blue',
+  year:  2003
+}
+
+
+
+Solution:
+
+car = [[:type, 'sedan'], [:color, 'blue'], [:year, 2003]]
+
+This is merely practice on converting the data from a hash into a nested array. The
+exercise is designed to make the strengths of a hash standout when a label is required.

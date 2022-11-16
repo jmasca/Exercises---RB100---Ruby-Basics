@@ -1,0 +1,30 @@
+Exercise 1:
+
+You come across the following code. What errors does it raise for the given examples and
+what exactly do the error messages mean?
+
+def find_first_nonzero_among(numbers)
+  numbers.each do |n|
+    return n if n.nonzero?
+  end
+end
+
+# Examples
+
+find_first_nonzero_among(0, 0, 1, 0, 2, 0)
+find_first_nonzero_among(1)
+
+
+
+Solution:
+The first example will have an error that states that too many arguments were provided. The
+method 'find_first_nonzero_among' only has one parameter. The second example will give an
+error stating that integers do not have an #each method. This method is expecting an array.
+
+The examples should be arrays:
+find_first_nonzero_among([0, 0, 1, 0, 2, 0])
+find_first_nonzero_among([1])
+
+Specific Errors Raised:
+ArgumentError
+NoMethodError
